@@ -10,7 +10,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-mongoose.connect(process.env.DB_URL, {
+mongoose.connect("mongodb+srv://AkkanaSanjeev:Sanjeev12@cluster0.nouv3zf.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
